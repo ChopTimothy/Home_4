@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap</title>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style3.css">
+        
+        <style>
+    html {
+      font-size: 10px;
+    }
+    body {
+      font-size: 12pt;
+      padding: 10px;
+    }
+    main, aside {
+      background-color: #ddd;
+      padding: 10px;
+      font-family: serif;
+      height: 100%;
+    }
+    h1 {
+      margin-top: 15px;
+      font-size: 2em;
+      font-weight: bold;
+    }
+       </style>
+      </head>
+    <body>
+        <header style="width:100%; background-color:#ccc; padding: 10px; height:130px;" id="main-aside-wrapper2">
+        <img style="float:left; margin:10px; width:100px; height:100px;" src="image.png" alt="Описание картинки для скрин-ридеров и поисковиков" />
+        <div>
+        <h1>Название сайта</h1>
+        <nav>
+        <ul>
+        <a href="#111">Ссылка 1</a>
+        <a href="#222">Ссылка 2</a>
+        <a href="#333">Ссылка 3</a>
+        </ul>
+        </nav></div>
+        </header>
+        <main>
+            <div class="container-fluid">
+            <div class="row d-flex mx-sm-m3">
+            <div class="col-md-4 order-1 px-sm-3">
+                <table id="111"></table>
+                <ul>
+            <li><a href="https://www.kubsu.ru/">1) абсолютную гиперссылку на главную страницу сайта kubsu.ru;</a></li>
+            <li><a href="https://www.kubsu.ru/">2) абсолютную на главную сайта kubsu.ru в протоколе https;</a></li>
+            <li>3) ссылку-изображение;<br><a href="https://www.kubsu.ru/"><img style="width:100%" src="https://img.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_23-2150752964.jpg" alt=""></a></li>
+            <li><a href=""> 4) сокращенную ссылку на внутреннюю страницу;</a></li>
+            <li><a href="">5) сокращенную ссылку на главную страницу; </a></li>
+            <li><a href="">6) ссылку на фрагмент текущей страницы; </a></li>
+            <li><a href="">7) ссылку с тремя параметрами в URL;</a></li>
+            <li><a href="">8) ссылку с параметром id в URL;</a></li>
+            <li><a href="">9) относительную на страницу в текущем каталоге;</a></li>
+            <li><a href="">10) относительную на страницу в каталоге about;</a></li>
+            <li><a href="">11) относительную на страницу в каталоге уровнем выше текущего;</a></li>
+            <li><a href="">12) относительную на страницу в каталоге двумя уровнями выше;</a></li>
+            <li><a href="">13) контекстную в тексте абзаца;</a></li>
+            <li><a href="">14) ссылку на фрагмент страницы стороннего сайта;</a></li>
+            <li><a href="">15) ссылки из прямоугольных и круглых областей картинки (HTML-тег map);</a></li>
+            <li><a href="">16) ссылку с пустым href;</a></li>
+            <li><a href="">17) ссылку без href;</a></li>
+            <li><a href="">18) ссылку, по которой запрещен переход поисковикам;</a></li>
+            <li><a href="">19) запрещенную для индексации поисковиками;</a></li>
+            <li><a href="https://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета">20) нумерованный список ссылок с подписями title;</a></li>
+            <li><a href="">21) ссылку на файл на сервере FTP с авторизацией;</a></li>
+                </ul>
+            </div> 
+            <div class="col-md-4 order-2 px-sm-3">
+                <table id="222">
+                <tr style=" background-color:#ce1a29; padding: 10px;">
+                    <th>Колонка 1</th>
+                    <th>Колонка 2</th>
+                    <th>Колонка 3</th>
+                    <th>Колонка 4</th>
+                  </tr>
+                  <tr id="LLL1">
+                      <td colspan="4">Ячейка 11 объединенная с 12, 13, 14</td>
+                    
+                  </tr>
+                  <tr id="LLL2">
+                    <td>Ячейка 21</td>
+                    <td>Ячейка 22</td>
+                    <td>Ячейка 23</td>
+                    <td>Ячейка 24</td>
+                  </tr>
+                  <tr id="LLL1">
+                    <td>Ячейка 31</td>
+                    <td>Ячейка 32</td>
+                    <td>Ячейка 33</td>
+                    <td>Ячейка 34</td>
+                  </tr>
+                  <tr id="LLL2">
+                    <td>Ячейка 41</td>
+                    <td colspan="2">Ячейка 42 объединенная с 43</td>
+                    <td>Ячейка 44</td>
+                  </tr>
+                  <tr id="LLL1">
+                    <td>Ячейка 51</td>
+                    <td>Ячейка 52</td>
+                    <td>Ячейка 53</td>
+                    <td>Ячейка 54</td>
+                  </tr>
+                  <tr id="LLL2">
+                    <td>Ячейка 61</td>
+                    <td>Ячейка 62</td>
+                    <td>Ячейка 63</td>
+                    <td>Ячейка 64</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="col-md-4 order-3 px-sm-3">
+                <table id="333"></table>
+                <h1>Форма</h1>
+                <form action="/" method="POST">
+    
+                <label>
+            ФИО:<br>
+            <input name="field-name-1" placeholder="Введите ФИО">
+                </label><br>
+    
+                <label></label>
+                Телефон:<br>
+                <input name="field-email" type="tel" placeholder="Введите ваш телефон">
+                </label><br>
+
+                <label>
+            Почта:<br>
+            <input name="field-email" type="email" placeholder="Введите вашу почту">
+                </label><br>
+    
+                <label>
+            Введите дату рождения:<br>
+            <input name="field-date" value="2000-01-01" type="date">
+                </label><br>
+    
+                Ваш пол:<br>
+                <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+                мужской</label>
+                <label><input type="radio" name="radio-group-1" value="Значение2">
+                женский</label><br>
+
+                <label>
+            любимый язык программирования:<br>
+            <select name="field-name-4[]" multiple="multiple">
+                <option value="1" selected="selected">Pascal</option>
+                <option value="2" selected="selected">C</option>
+                <option value="3" selected="selected">C++</option>>
+                <option value="4" selected="selected">JavaScript</option>>
+                <option value="5" selected="selected">PHP</option>>
+                <option value="6" selected="selected">Python</option>>
+                <option value="7" selected="selected">Java</option>>
+                <option value="8" selected="selected">Haskel</option>>
+                <option value="9" selected="selected">Clojure</option>>
+                <option value="10" selected="selected">Prolog</option>>
+                <option value="11" selected="selected">Scala</option>>
+            </select>
+                </label><br>
+
+                <label>
+            Биография:<br>
+            <textarea name="biography" placeholder="Текст"></textarea>
+                </label><br><br>
+
+                <label><input type="checkbox" checked="checked" name="check-1">
+                с контрактом ознакомлен (а)</label><br><br>
+            </div>
+            </div>
+            </div>
+        </main>
+        
+        <footer style="width:100%; background-color:#ccc; padding: 10px; height:20px;">
+            (А) Чоп Тимофей
+        </footer>
+</body>
+</html>
+
